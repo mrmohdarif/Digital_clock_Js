@@ -1,0 +1,336 @@
+.container
+{
+    /* background-color: #3D087B; */
+    display: flex;
+
+    /* flex-direction: column; */
+    background-color: #3D087B;
+    padding: 20px 60px;
+}
+.container--clock{
+    display: flex;
+ 
+    align-items: center;
+}
+.clock-logo{
+    width: 204px;
+    height: 77px;
+}
+.wake-up{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+.sub-container--2
+{
+     color:#FFFFFF;
+    background-color: #8f34f7 ;
+    font-size: 22px;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    border: 1px solid #EDEDED;
+    text-align: center;
+}
+.set-alarm{
+    display: flex;
+    justify-content: center;
+   justify-items:center;
+   justify-content: space-between;
+   gap: 50px;
+}
+.set-time
+{
+    /* width: 220px;
+    height: 94px; */
+    border-radius: 5px;
+    color: #F25CFE;
+    background-color: #7815e9 ;
+    padding: 9px;
+    line-height: 1.5;
+    width: 206px
+}
+.set-time p{
+    margin: 0px;
+}
+.set-alarm1
+{
+    width: 250px;
+    height: 50px;
+    border-radius: 5px ;
+    background-image: linear-gradient(135deg, #6E54EC , #CB52F8,#FC5EFF,#F1A7C5);
+    color:#FFFFFF; 
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    font-size: 24px;
+    cursor: pointer;
+}
+.set-alarm1:hover
+{  
+      
+    background-image: linear-gradient(260deg, #6E54EC , #CB52F8,#FC5EFF,#F1A7C5);
+}
+.set-section{
+   /* border: 1px solid #EDEDED; */
+}
+.wake-up-icon{
+    width: 34px;
+    height: 34px;
+}
+.wake-up p{
+    font-size:18px;
+    color: #3D087B;
+}
+.component-image{
+    width: 470px;
+   height: 341px;
+   border-radius: 20px
+}
+.main-container{
+    width: 1150px;
+    margin: 0 auto;
+}
+.container--clock
+{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #FFFFFF;
+    margin: 0px 50px;
+    padding: 10px;
+    border-radius: 5px;
+    color: #3D087B;
+}
+.container--clock p
+{
+  margin: 0px;
+}
+.time{
+    width: 80px;
+   height: 90px;
+   display: flex;
+   justify-content: center;
+    align-items: center;
+}
+.hours{
+    
+    font-size: 36px;
+    width: 80px;
+   height: 90px;
+   /* border: 1px solid red; */
+   background-image: url('timeline@2x.png');
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+.mins
+{
+    /* background-color: red; */
+    font-size: 36px;
+    width: 82px;
+    height: 90px;
+    /* border: 1px solid red; */
+    background-image: url('timeline@2x.png');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.secs
+{   
+    /* background-color: red; */
+    font-size: 36px;
+    width: 82px;
+    height: 90px;
+    /* border: 1px solid red; */
+    background-image: url('timeline@2x.png');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.am{
+    /* background-color: red; */
+    font-size: 36px;
+    width: 82px;
+    height: 90px;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    background-image: url("AM_svg@2x.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    color: #FFFFFF;
+}
+.time-font{
+    font-size: 23px;
+}
+.time-clock{
+    font-size: 20px;
+    color: #3D087B;
+}
+.set-section{
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    
+}
+.break-fast{
+    color: #8E53F0;
+    background-color: #FFFFFF;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 20px 10px;
+    border-radius: 5px;
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    align-items: center;
+    height: 50px;
+    text-align: center;
+}
+.dot{
+    font-size: 50px;
+    color: #8A11BF;
+}
+.div-clock1{
+    display: none;
+}
+.container--2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.div-clock{
+    margin-bottom: 40px;
+}
+.time-select{
+    width: 200px;
+    height: 30px;
+    /* border-color: #FFFFFF; */
+    color: #3D087BDE;
+    font-size: 12px;
+    border: 2px solid #EDEDED;
+}
+.clock-digital{
+    color: #8A11BF;
+}
+
+@media only screen and (max-width: 500px)
+{
+.container{
+    flex-direction: column-reverse;
+    padding: 30px 0px;
+} 
+.container{
+  align-items: flex-start;
+  padding: 0px 15px;
+} 
+.main-container
+{
+    width: 300px;
+}
+.set-section
+{
+    width: 250px;
+    margin-top: 10px;
+}
+.sub-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+}
+.component-image {
+    width: 270px;
+    height: 200px;
+    border-radius: 10px;
+}
+.break-fast 
+{
+    width: 250px;
+    padding: 0px 10px;
+    font-size: 12px;
+}
+.container--clock{
+    margin: 0px;
+    width: 250px;
+}
+.set-alarm
+{
+    gap: 10px;
+    width: 250px;
+}
+.sub-container--2{
+    width: 200px;
+    margin-top: 20px;
+}
+.set-alarm1{
+    font-size: 18px;
+    width: 200px;
+}
+.set-alarm p{
+    font-size: 9px;
+}
+.time-select{
+    width: 100px;
+}
+.wake-up{
+    margin-bottom: 0px;
+}
+.wake-up p{
+    font-size: 16px
+}
+.div-clock{
+    display: none;
+}
+.div-clock1{
+    display: block;
+    margin: 20px 0px;
+}
+.sub-container--2
+{
+    font-size: 18px;
+    width: 225px;
+    padding: 10px 20px;
+}
+.time-font{
+    font-size: 14px;
+}
+ .hours{
+    /* width: 0px; */
+    height: 0px;
+}
+
+.mins{
+    /* width: 0px; */
+    height: 0px;
+}
+.secs{
+    /* width: 0px; */
+    height: 0px;
+}
+.am{
+    height: 50px;
+}
+.container--clock{
+    height: 60px
+}
+.dot{
+    margin-top: -25px;
+}
+.set-section{
+    width: 270px;
+}
+
+}

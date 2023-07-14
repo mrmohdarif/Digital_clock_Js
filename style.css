@@ -1,3 +1,9 @@
+body{
+    /* overflow-y: hidden; */
+    margin: 0px;
+    background-color: #3D087B;
+}
+
 .container
 {
     /* background-color: #3D087B; */
@@ -5,7 +11,7 @@
 
     /* flex-direction: column; */
     background-color: #3D087B;
-    padding: 20px 60px;
+    padding: 0px 60px;
 }
 .container--clock{
     display: flex;
@@ -210,7 +216,7 @@
     align-items: center;
 }
 .div-clock{
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
 }
 .time-select{
     width: 200px;
@@ -221,6 +227,7 @@
     border: 2px solid #EDEDED;
 }
 .clock-digital{
+
     color: #8A11BF;
 }
 

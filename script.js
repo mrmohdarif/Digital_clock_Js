@@ -109,8 +109,9 @@ else if(hours>=1 && hours<=12 && timeZone=="AM")
 //     Healthmassage.textContent="STOP YAWNING, GET SOME TEA.. ITS JUST EVENING!";
 // }   
 }
-setInterval(() => {
+const clear=setInterval(() => {
 clock();
+
 },1000);
 
 
@@ -125,12 +126,12 @@ alarmbtn.addEventListener('click',function ()
      let hrs=date.getHours();
      console.log(hrs,typeof hrs);  
 
-    let wake_up=document.getElementById("Set_wake_up_time").value;
+    let wake_up=document.getElementById("Set_wake_up_time").value-1;
     console.log(wake_up);
     let change=Number(wake_up)
     console.log( typeof change);
-    let wake=document.getElementById("Set_wake_up_time").options[wake_up].innerHTML;
-    // console.log(wake);
+    let wake=document.getElementById("Set_wake_up_time").options[change].innerHTML;
+    console.log(wake);
     let w_up_time=document.getElementById("w_up_time");
     w_up_time.innerHTML=wake;
 
@@ -152,7 +153,8 @@ alarmbtn.addEventListener('click',function ()
     // }
 
     //section 2 lunch time
-    let lunch=document.getElementById("lunch_time").value;   
+    let lunch=document.getElementById("lunch_time").value-1;   
+    console.log(lunch)
     let lunch_value=document.getElementById("lunch_time").options[lunch].innerHTML;
      console.log(lunch_value);
     let  l_time=document.getElementById("l_time");
@@ -166,7 +168,7 @@ alarmbtn.addEventListener('click',function ()
     morningquote.textContent="Good Afternoon,Take Some lunch"
     }
     //section 3   nap time
-    let naptime=document.getElementById("nap_time").value;   
+    let naptime=document.getElementById("nap_time").value-1;   
     let nap_value=document.getElementById("nap_time").options[naptime].innerHTML;
     let  n_time=document.getElementById("n_time");
     n_time.innerHTML=nap_value
@@ -181,7 +183,7 @@ alarmbtn.addEventListener('click',function ()
 
     //section 4  night time
      
-    let nighttime=document.getElementById("night_time").value;   
+    let nighttime=document.getElementById("night_time").value-1;   
     let night_value=document.getElementById("night_time").options[nighttime].innerHTML;
     console.log(night_value);
     let  night_alarm=document.getElementById("night_alarm");

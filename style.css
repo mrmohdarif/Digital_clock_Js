@@ -4,6 +4,30 @@ body{
     background-color: #3D087B;
 }
 
+.blur2{
+    width: 350px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #9775fa;
+    z-index: 1;
+
+    
+  
+}
+.blur1{
+    width: 470px;
+    height: 20px;
+    background-color:green ;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d0bfff;
+    border-radius: 5px;
+}
+
+
+
 .container
 {
     /* background-color: #3D087B; */
